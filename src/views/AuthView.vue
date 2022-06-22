@@ -1,6 +1,11 @@
 <template>
   <div class="home">
-    <h1>This is an authoritazation page</h1>
+    <h1>LeadHit</h1>
+    <form>
+      <label for="site-id">id сайта</label>
+      <input type="text" id="site-id" />
+      <button type="submit">Войти</button>
+    </form>
   </div>
 </template>
 
