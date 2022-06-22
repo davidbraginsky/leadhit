@@ -1,9 +1,9 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Авторизация</router-link> |
+    <router-link to="/analytics">Аналитика</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>
