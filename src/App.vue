@@ -3,12 +3,19 @@
     <router-link to="/">Авторизация</router-link> |
     <router-link to="/analytics">Аналитика</router-link>
   </nav>
-  <router-view />
+  <div class="container">
+    <router-view />
+  </div>
 </template>
 
 <style>
+.container {
+  width: 80%;
+  max-width: 720px;
+  margin: 0 auto;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
