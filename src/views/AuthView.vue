@@ -12,6 +12,7 @@
 <script>
 import { MDBInput, MDBBtn } from "mdb-vue-ui-kit";
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 export default {
   name: "AuthView",
   components: {
@@ -21,6 +22,7 @@ export default {
   setup() {
     const userInput = ref("");
     const errorRef = ref(null);
+    const router = useRouter();
 
     const showErrorMessage = () => {
       errorRef.value.classList.add("form-text--active");
@@ -42,6 +44,8 @@ export default {
       const { message } = reply;
       if (message === "ok") {
         console.log("success");
+        localStorage.setItem("leadhit-site-id", "5f8475902b0be670555f1bb3");
+        router.push("/analytics");
       } else {
         console.log("something went wrong");
       }
