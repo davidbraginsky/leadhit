@@ -43,7 +43,6 @@ export default {
       const reply = await response.json();
       const { message } = reply;
       if (message === "ok") {
-        console.log("success");
         localStorage.setItem("leadhit-site-id", "5f8475902b0be670555f1bb3");
         router.push("/analytics");
       } else {
