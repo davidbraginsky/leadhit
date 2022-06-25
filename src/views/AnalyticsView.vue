@@ -11,6 +11,12 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 
 export default {
   name: "HelloWorld",
+  beforeMount() {
+    const siteID = localStorage.getItem("leadhit-site-id");
+    if (!siteID) {
+      this.$router.push("/");
+    }
+  },
   mounted() {
     let root = am5.Root.new(this.$refs.chartdiv);
 
